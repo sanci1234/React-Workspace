@@ -22,11 +22,14 @@ function App() {
       ) : (
         <p>Dersten Kaldın</p>
       )}
-      {
-        isimler.map((isim, index) =>(
-          <div key={index}>{isim} </div>
-        ))
-      }
+      {isimler.map((isim, index) => (
+        <div style={{
+          backgroundColor:"orange",
+          border:"1px solid black",
+        }} key={index}>
+          {isim}
+        </div>
+      ))}
     </div>
   );
 }
